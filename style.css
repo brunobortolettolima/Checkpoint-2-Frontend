@@ -1,0 +1,96 @@
+html * {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Mochiy Pop One';
+    font-size: 35px;
+    font-style: initial;
+    font-weight: 200;
+    background-color:rgb(37, 37, 51);
+    padding: 15px;
+}
+
+a.botao {
+    text-align: auto;
+    font-family: 'Mochiy Pop One';
+    font-size: 15px;
+    background-color: rgb(37, 37, 51);
+    border-radius: 5px;
+    border: auto;
+    color: white;
+    display: block;
+    padding: auto;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color, 1s, color, 2s;
+}
+
+.botao {
+
+}
+
+.botao:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.resumo {
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 19px;
+    font-style: unset;
+}
+
+span {
+    background-color: rgba(228, 224, 224, 0.336);
+    font-size: 23px;
+}
+
+.corpo {
+    background-image: url("imagens/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.principal {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    font-family: 'Mochiy Pop One';
+    font-size: 20px;
+    margin: 30px 450px;
+    border-width:thin;
+}
+
+li {
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-style: italic;
+}
+
+#top-list{
+    list-style-type: none;
+    list-style: none;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+}
+
+.icones {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+}
