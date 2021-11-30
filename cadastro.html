@@ -5,87 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <style type="text/css">
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .conteudo {
-            border: 1px solid lightgray;
-            border-radius: 10px;
-            padding: 15px 20px;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-
-        .conteudo__titulo {
-            font-size: 22px;
-        }
-
-        .formulario {
-            margin: 25px 0 0;
-        }
-
-        .formulario__grupo {
-            margin: 20px 0;
-        }
-
-        .formulario__rotulo {
-            display: block;
-            font-size: 17px;
-            font-weight: 700;
-            margin: 5px 0;
-        }
-
-        .formulario__campo {
-            border: 1px solid lightgray;
-            border-radius: 5px;
-            font-size: 16px;
-            padding: 5px 10px;
-            width: 100%;
-        }
-
-        .formulario__botao {
-            display: inline-block;
-            width: 49%;
-        }
-
-        .botao__submit {
-            background-color: black;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            padding: 10px 20px;
-            width: 100%;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-        .botao__reset {
-            background-color: black;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            padding: 10px 25px;
-            width: 100%;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-        span {
-            color: red;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <style type="text/css"> </style>
+     
 </head>
 
 <body>
@@ -93,41 +15,42 @@
         <h1 class="conteudo__titulo">Para se cadastrar, preencha o formulário abaixo:</h1>
             <form class="formulario" action="https://api.sistema.com/cadastrar" method="GET">
                 <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="nome">Nome completo<span>*</span></label>
-                    <input class="formulario__campo" name="nome" id="nome" type="text" placeholder="Digite seu nome" required>
+                    <label class="formulario__rotulo" for="nome">&nbsp; Nome completo<span>*</span></label>
+                    <input class="formulario__campo" name="nome" id="nome" type="text" maxlength="100" placeholder="Digite seu nome" required>
                 </div>
 
                 <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="email">E-mail<span>*</span></label>
+                    <label class="formulario__rotulo" for="email">&nbsp; E-mail<span>*</span></label>
                     <input class="formulario__campo" name="email" id="email" type="email" placeholder="Digite seu e-mail" required>
                 </div>
 
                 <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="telefone">Telefone</label>
+                    <label class="formulario__rotulo" for="telefone">&nbsp; Telefone</label>
                     <input class="formulario__campo" name="telefone" id="telefone" type="text" maxlength="11" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" placeholder="(00) 00000-0000">
                 </div>
 
                 <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="dataNascimento">Data de Nascimento<span>*</span></label>
+                    <label class="formulario__rotulo" for="dataNascimento">&nbsp; Data de Nascimento<span>*</span></label>
                     <input class="formulario__campo" name="dataNascimento" id="dataNascimento" type="date" required>
                 </div>
                 
                 <div class="formulario__grupo">
-                    <h3 class="formulario__rotulo">Maior de Idade?<span>*</span></h3>
+                    <h3 class="formulario__rotulo">&nbsp; Maior de Idade?<span>*</span></h3>
                     <div>
-                        <label class="formulario__radio" for="sim">Sim</label>
+                        <label class="formulario__radio" for="sim">&nbsp;&nbsp; Sim</label>
                         <input type="radio" id="sim" name="sim" value="sim">  
                     </div>
                     <div>
-                        <label class="formulario__radio" for="nao">Não</label>
+                        <label class="formulario__radio" for="nao">&nbsp;&nbsp; Não</label>
                         <input type="radio" id="nao" name="sim" value="nao"> 
                     </div>
                 </div>
-
+                <div class="legenda__formulario"> 
+                <fieldset> <legend>.: Mais sobre você .:</legend> 
                 <div class="formulario__grupo">
                     <h3 class="formulario__rotulo">Qual o seu MAIOR interesse na cidade de São Paulo?<span>*</span></h3>
                     <select name="select" required>
-                        <option selected disabled>Escolha um interesse</option>
+                        <option selected disabled>&nbsp; Escolha um interesse</option>
                         <optgroup label="Cultura">
                             <option value="museus">Museus</option>
                             <option value="teatros">Teatros</option>
@@ -149,22 +72,25 @@
                 </div>
 
                 <div class="formulario__grupo">
-                    <h3 class="formulario__rotulo">Hoje, na cidade de São Paulo, você é:</h3>
+                    <h3 class="formulario__rotulo"> Hoje, na cidade de São Paulo, você é:</h3>
                     <div>
                         <input type="checkbox" id="residente" name="atual" value="residente">
-                        <label class="formulario__checkbox" for="residente">Residente</label>
+                        <label class="formulario__checkbox" for="residente">&nbsp;Residente</label>
                     </div>
                     <div>
                         <input type="checkbox" id="turista" name="atual" value="turista">
-                        <label class="formulario__checkbox" for="turista">Turista</label>
+                        <label class="formulario__checkbox" for="turista">&nbsp;Turista</label>
                     </div>
                     <div>
                         <input type="checkbox" id="estudante" name="atual" value="estudante">
-                        <label class="formulario__checkbox" for="estudante">Estudante</label>
+                        <label class="formulario__checkbox" for="estudante">&nbsp;Estudante</label>
                     </div>
                 </div>
+            </div>
+                    </fieldset>
 
                 <div class="formulario__botao">
+                    <p></p>
                     <button class="botao__submit" type="submit">Enviar</button>
                 </div>
 

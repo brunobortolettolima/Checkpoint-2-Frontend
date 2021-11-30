@@ -1,0 +1,104 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(/imagens/bgForm2.png);
+            background-size: 1600px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+
+        }
+
+        .conteudo {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 15px 20px;
+            /* Gustavo alterou a partir daqui */
+            margin: 90px auto;
+            max-width: 600px;
+            background: rgba(209, 160, 255, 0.9 );
+            background-image: url(/imagens/bgForm1.png);
+            /* Gustavo Finalizou aqui */
+        }
+
+        .conteudo__titulo {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            
+        }
+
+        .formulario {
+            margin: 25px 0 0;
+            
+        }
+
+        .formulario__grupo {
+            margin: 20px auto;
+        
+        }
+
+        .formulario__rotulo {
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 5px 0;
+            
+        }
+
+        .formulario__campo {
+            border: 1px solid lightgray;
+            border-radius: 15px;
+            font-size: 16px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+    
+        .formulario__campo:hover {
+            transform: scale(1.1);
+        }
+        .formulario__botao {
+            display: inline-block;
+            width: 49%;
+        }
+
+        .formulario__radio {
+        }
+
+        .botao__submit {
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .botao__reset {
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px 25px;
+            width: 100%;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .legenda__formulario {
+                        
+
+        }
+
+        span {
+            color: red;
+        }
