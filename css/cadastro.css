@@ -153,8 +153,7 @@ select {
     box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
 }
 
-/* Animação de entrada dos campos */
-
+/* INICIO Animação de entrada dos campos */
 .formulario .formulario__grupo:nth-child(1) { 
     animation-name: move; 
     animation-duration: 0.5s; 
@@ -208,8 +207,8 @@ select {
   animation-name: move; 
     animation-duration: 3s; 
     animation-delay: 1050ms; 
-    animation-fill-mode: backwards;      
-} 
+    animation-fill-mode: backwards;
+}
 
 @keyframes move {
     from {
@@ -220,17 +219,16 @@ select {
     opacity: 1;
     transform: translateX(0%);
     }
-
-/* Animação de entrada dos campos */
+}
+ /* FIM Animação de entrada dos campos */
      
-@keyframes botao{
+@keyframes botao {
     0%{
         transform: scale(1);
     }
     100%{
         transform: scale(1.05);
     }
-
 }
 
 span {
