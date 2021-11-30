@@ -1,75 +1,68 @@
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}        
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url("/imagens/bgForm2.png");
-            background-size: 1600px;
-            background-repeat: no-repeat;
-            background-position-x: center;
-            background-position-y: top;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagens/bgForm2.png);
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
 
-        }
+.conteudo {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 90px auto;
+    max-width: 600px;
+    background: rgba(209, 160, 255, 0.9 );
+    background-image: url(../imagens/bgForm1.png);
+}
 
-        .conteudo {
-            border: 1px solid lightgray;
-            border-radius: 10px;
-            padding: 15px 20px;
-            margin: 90px auto;
-            max-width: 600px;
-            background: rgba(209, 160, 255, 0.9 );
-            background-image: url(/imagens/bgForm1.png);
-        
-        }
+.conteudo__titulo {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
 
-        .conteudo__titulo {
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            
-        }
+.formulario {
+    margin: 25px 0 0;
+}
 
-        .formulario {
-            margin: 25px 0 0;
-            
-        }
+.formulario__grupo {
+    margin: 20px auto;
+}
 
-        .formulario__grupo {
-            margin: 20px auto;
-        
-        }
+.formulario__rotulo {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 5px 0;
+}
 
-        .formulario__rotulo {
-            display: block;
-            font-size: 17px;
-            font-weight: 700;
-            margin: 5px 0;
-            
-        }
-
-        .formulario__campo {
-            border: 1px solid lightgray;
-            border-radius: 15px;
-            font-size: 16px;
-            padding: 5px 10px;
-            width: 100%;
-            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-    
+.formulario__campo {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 100%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
      
-        .formulario__campo:focus {
-            background-color: rgb(245, 220, 245);
-            }
-            .formulario__campo:hover {
-                transform:scale(1.05,1.05);
-            }
+.formulario__campo:focus {
+    background-color: rgb(245, 220, 245);
+}
 
-        .formulario__botao {
-            display: inline-block;
-            width: 49%;
-        }
+.formulario__campo:hover {
+    transform:scale(1.05,1.05);
+}
 
+.formulario__botao {
+    display: inline-block;
+    width: 49%;
+}
       
 /* INICIO estilizando o menu suspenso de INTERESSE */
 select {
@@ -118,52 +111,48 @@ select {
     }
 /* FIM estilizando o menu suspenso de INTERESSE */
 
-
-       
-
-        .botao__submit{
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            color:black;
-            width: 100%;
-            font-weight: 700;
-            background: linear-gradient(135deg, #71b7e6, #9b59b6);
-            cursor: pointer; 
-        }
+.botao__submit{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color:black;
+    width: 100%;
+    font-weight: 700;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    cursor: pointer; 
+}
         
-        .botao__submit:hover{
-            animation-name: botao;
-            animation-duration: 0.8s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: ease-in-out;
-            box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
-        }
+.botao__submit:hover{
+    animation-name: botao;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
+}
         
-        .botao__reset{
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            color:black;
-            width: 100%;
-            font-weight: 700;
-            background: linear-gradient(135deg, #71b7e6, #9b59b6);
-            cursor: pointer; 
-        }
+.botao__reset{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color:black;
+    width: 100%;
+    font-weight: 700;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    cursor: pointer; 
+}
         
-        .botao__reset:hover{
-            animation-name: botao;
-            animation-duration: 0.8s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: ease-in-out;
-            box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
-        }
-
-        
+.botao__reset:hover{
+    animation-name: botao;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
+}
+     
 @keyframes botao{
     0%{
         transform: scale(1);
@@ -174,6 +163,6 @@ select {
 
 }
 
-        span {
-            color: red;
-        }
+span {
+    color: red;
+}

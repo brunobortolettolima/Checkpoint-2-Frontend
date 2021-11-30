@@ -11,7 +11,7 @@ html * {
     font-size: 35px;
     font-style: initial;
     font-weight: 200;
-    background-color:rgb(37, 37, 51);
+    background-color:#713988;
     padding: 15px;
 }
 
@@ -19,7 +19,7 @@ a.botao {
     text-align: auto;
     font-family: 'Mochiy Pop One';
     font-size: 15px;
-    background-color: rgb(37, 37, 51);
+    background-color:#713988;
     border-radius: 5px;
     border: auto;
     color: white;
@@ -30,13 +30,9 @@ a.botao {
     transition: background-color, 1s, color, 2s;
 }
 
-.botao {
-
-}
-
 .botao:hover {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #9b59b6;
+    color: rgb(37, 230, 255);
 }
 
 .resumo {
@@ -54,7 +50,7 @@ span {
 }
 
 .corpo {
-    background-image: url(/imagens/background.jpg);
+    background-image: url(../imagens/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
