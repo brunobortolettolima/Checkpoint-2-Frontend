@@ -5,7 +5,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(/imagens/bgForm2.png);
+            background-image: url("/imagens/bgForm2.png");
             background-size: 1600px;
             background-repeat: no-repeat;
             background-position-x: center;
@@ -17,12 +17,11 @@
             border: 1px solid lightgray;
             border-radius: 10px;
             padding: 15px 20px;
-            /* Gustavo alterou a partir daqui */
             margin: 90px auto;
             max-width: 600px;
             background: rgba(209, 160, 255, 0.9 );
             background-image: url(/imagens/bgForm1.png);
-            /* Gustavo Finalizou aqui */
+        
         }
 
         .conteudo__titulo {
@@ -55,49 +54,125 @@
             font-size: 16px;
             padding: 5px 10px;
             width: 100%;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
     
-        .formulario__campo:hover {
-            transform: scale(1.1);
-        }
+     
+        .formulario__campo:focus {
+            background-color: rgb(245, 220, 245);
+            }
+            .formulario__campo:hover {
+                transform:scale(1.05,1.05);
+            }
+
         .formulario__botao {
             display: inline-block;
             width: 49%;
         }
 
-        .formulario__radio {
-        }
+      
+/* INICIO estilizando o menu suspenso de INTERESSE */
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #9b59b6;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    }
+.select::-ms-expand {
+    display: none;
+    }
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 2.5em;
+    line-height: 2.5;
+    background: #5f6665;
+    overflow: hidden;
+    border-radius: .25em;
+    }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #713988;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+    }
+.select:hover::after {
+    color: #9b59b6;
+    }
+/* FIM estilizando o menu suspenso de INTERESSE */
 
-        .botao__submit {
-            background-color: black;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
+
+       
+
+        .botao__submit{
             padding: 10px 20px;
-            width: 100%;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-        .botao__reset {
-            background-color: black;
+            font-size: 18px;
             border: none;
             border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            padding: 10px 25px;
+            color:black;
             width: 100%;
-            cursor: pointer;
-            display: inline-block;
+            font-weight: 700;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            cursor: pointer; 
+        }
+        
+        .botao__submit:hover{
+            animation-name: botao;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
+        }
+        
+        .botao__reset{
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            color:black;
+            width: 100%;
+            font-weight: 700;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            cursor: pointer; 
+        }
+        
+        .botao__reset:hover{
+            animation-name: botao;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            box-shadow: 0 0 10px 5px rgba(109, 36, 99, 0.5); 
         }
 
-        .legenda__formulario {
-                        
+        
+@keyframes botao{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
 
-        }
+}
 
         span {
             color: red;
