@@ -54,7 +54,7 @@ span {
 }
 
 .corpo {
-    background-image: url("imagens/background.jpg");
+    background-image: url(/imagens/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
