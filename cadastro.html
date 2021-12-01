@@ -1,104 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <style type="text/css"> </style>    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cadastro.css">
+  <style type="text/css"> </style>
 </head>
 
 <body>
-    <article class="conteudo">
-        <h1 class="conteudo__titulo">Para se cadastrar, preencha o formulário abaixo:</h1>
-            <form class="formulario" action="https://api.sistema.com/cadastrar" method="GET">
-                <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="nome">&nbsp; Nome completo<span>*</span></label>
-                    <input class="formulario__campo" name="nome" id="nome" type="text" maxlength="100" placeholder="Digite seu nome" required>
-                </div>
+  <a class='skip-to-content' href='#content'>
+    pular para o conteúdo
+    <img scr="https://escolaeducacao.com.br/wp-content/uploads/2020/05/cultura-450x300.jpg" alt="">
+  </a>
+  <article class="conteudo">
+    <h1 class="conteudo__titulo">Para se cadastrar, preencha o formulário abaixo:</h1>
+    <form class="formulario" action="https://api.sistema.com/cadastrar" method="GET">
+      <div id='content' />
+      <div class="formulario__grupo">
+        <label class="formulario__rotulo" for="nome">&nbsp; Nome completo<span>*</span></label>
+        <input class="formulario__campo" name="nome" id="nome" type="text" maxlength="100" placeholder="Digite seu nome" required>
+      </div>
 
-                <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="email">&nbsp; E-mail<span>*</span></label>
-                    <input class="formulario__campo" name="email" id="email" type="email" placeholder="Digite seu e-mail" required>
-                </div>
+      <div class="formulario__grupo">
+        <label class="formulario__rotulo" for="email">&nbsp; E-mail<span>*</span></label>
+        <input class="formulario__campo" name="email" id="email" type="email" placeholder="Digite seu e-mail" required>
+      </div>
 
-                <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="telefone">&nbsp; Telefone</label>
-                    <input class="formulario__campo" name="telefone" id="telefone" type="text" maxlength="11" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" placeholder="(00) 00000-0000">
-                </div>
+      <div class="formulario__grupo">
+        <label class="formulario__rotulo" for="telefone">&nbsp; Telefone</label>
+        <input class="formulario__campo" name="telefone" id="telefone" type="text" maxlength="11" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" placeholder="(00) 00000-0000">
+      </div>
 
-                <div class="formulario__grupo">
-                    <label class="formulario__rotulo" for="dataNascimento">&nbsp; Data de Nascimento<span>*</span></label>
-                    <input class="formulario__campo" name="dataNascimento" id="dataNascimento" type="date" required>
-                </div>
-                
-                <div class="formulario__grupo">
-                    <h3 class="formulario__rotulo">&nbsp; Maior de Idade?<span>*</span></h3>
-                    <div>
-                        <label class="formulario__radio" for="sim">&nbsp;&nbsp; Sim</label>
-                        <input type="radio" id="sim" name="sim" value="sim">  
-                    </div>
-                    <div>
-                        <label class="formulario__radio" for="nao">&nbsp;&nbsp; Não</label>
-                        <input type="radio" id="nao" name="sim" value="nao"> 
-                    </div>
-                </div>
-                <div class="legenda__formulario"> 
-                    <fieldset> <legend>.: Mais sobre você .:</legend> 
-                    <div class="formulario__grupo">
-                        <h3 class="formulario__rotulo">Qual o seu MAIOR interesse na cidade de São Paulo?<span>*</span></h3>
-                        <div class="select">
-                        <select name="select" required>
-                            <option selected disabled>&nbsp; Escolha um interesse</option>
-                            <optgroup label="Cultura">
-                                <option value="museus">Museus</option>
-                                <option value="teatros">Teatros</option>
-                                <option value="cinemas">Cinemas</option>
-                            </optgroup>
-                            <optgroup label="Esporte">
-                                <option value="academias">Academias</option>
-                                <option value="estadios">Estádios</option>
-                            </optgroup>
-                            <optgroup label="Estudo">
-                                <option value="faculdade">Faculdades</option>
-                                <option value="colegios">Colégios</option>
-                            </optgroup>
-                            <optgroup label="Lazer">
-                                <option value="parques">Parques</option>
-                                <option value="shoppings">Shoppings</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                </div>
+      <div class="formulario__grupo">
+        <label class="formulario__rotulo" for="dataNascimento">&nbsp; Data de Nascimento<span>*</span></label>
+        <input class="formulario__campo" name="dataNascimento" id="dataNascimento" type="date" required>
+      </div>
 
-                <div class="formulario__grupo">
-                    <h3 class="formulario__rotulo"> Hoje, na cidade de São Paulo, você é:</h3>
-                    <div>
-                        <input type="checkbox" id="residente" name="atual" value="residente">
-                        <label class="formulario__checkbox" for="residente">&nbsp;Residente</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="turista" name="atual" value="turista">
-                        <label class="formulario__checkbox" for="turista">&nbsp;Turista</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="estudante" name="atual" value="estudante">
-                        <label class="formulario__checkbox" for="estudante">&nbsp;Estudante</label>
-                    </div>
-                </div>
-                    </fieldset>
+      <div class="formulario__grupo">
+        <h3 class="formulario__rotulo">&nbsp; Maior de Idade?<span>*</span></h3>
+        <div>
+          <label class="formulario__radio" for="sim">&nbsp;&nbsp; Sim</label>
+          <input type="radio" id="sim" name="sim" value="sim">
+        </div>
+        <div>
+          <label class="formulario__radio" for="nao">&nbsp;&nbsp; Não</label>
+          <input type="radio" id="nao" name="sim" value="nao">
+        </div>
+      </div>
+      <div class="legenda__formulario">
+        <fieldset>
+          <legend>.: Mais sobre você .:</legend>
+          <div class="formulario__grupo">
+            <h3 class="formulario__rotulo">Qual o seu MAIOR interesse na cidade de São Paulo?<span>*</span></h3>
+            <div class="select">
+              <select name="select" required>
+                <option selected disabled>&nbsp; Escolha um interesse</option>
+                <optgroup label="Cultura">
+                  <option value="museus">Museus</option>
+                  <option value="teatros">Teatros</option>
+                  <option value="cinemas">Cinemas</option </optgroup>
+                <optgroup label="Esporte">
+                  <option value="academias">Academias</option>
+                  <option value="estadios">Estádios</option>
+                </optgroup>
+                <optgroup label="Estudo">
+                  <option value="faculdade">Faculdades</option>
+                  <option value="colegios">Colégios</option>
+                </optgroup>
+                <optgroup label="Lazer">
+                  <option value="parques">Parques</option>
+                  <option value="shoppings">Shoppings</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="formulario__grupo">
+            <h3 class="formulario__rotulo"> Hoje, na cidade de São Paulo, você é:</h3>
+            <div class="card">
+              <div class="select-input">
+                <input type="checkbox" id="residente" name="atual" value="residente">
+                <label class="formulario__checkbox" for="residente">&nbsp;Residente</label>
+              </div>
+              <img class="first-pic" src="https://resizedimgs.zapimoveis.com.br/crop/272x224/vr.images.sp/ab8e278d777b748e8b109e8c5cee367c.jpg">
+            </div>
+            <div class="card">
+              <div class="select-input">
+                <input type="checkbox" id="residente" name="atual" value="residente">
+                <label class="formulario__checkbox" for="residente">&nbsp;Turista</label>
+              </div>
+              <img class="first-pic turista" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjYfRcUoOX_mrEQodIEW0JgwoTDhFkUv9_A&usqp=CAU">
+            </div>
+            <div class="card">
+              <div class="select-input">
+                <input type="checkbox" id="residente" name="atual" value="residente">
+                <label class="formulario__checkbox" for="residente">&nbsp;Estudante</label>
+              </div>
+              <img class="first-pic" src="https://image.freepik.com/fotos-gratis/jovem-estudante-com-roupas-jeans-e-mochila-segurando-livros-isolados-na-parede-azul_365776-870.jpg">
+            </div>
 
-                <div class="formulario__botao">
-                    <button class="botao__submit" type="submit">Enviar</button>
-                </div>
+        </fieldset>
 
-                <div class="formulario__botao">
-                    <button class="botao__reset" type="reset">Limpar</button>
-                </div>
-            </form>
-    </article>
-    
+        <div class="formulario__botao">
+          <button class="botao__submit" type="submit">Enviar</button>
+        </div>
+
+        <div class="formulario__botao">
+          <button class="botao__reset" type="reset">Limpar</button>
+        </div>
+    </form>
+  </article>
+
 </body>
+
 </html>
